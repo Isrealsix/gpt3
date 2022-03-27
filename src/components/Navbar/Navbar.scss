@@ -7,7 +7,7 @@
   &__links {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 
     &--logo {
@@ -33,7 +33,7 @@
       cursor: pointer;
     }
 
-    &__menu-container {
+    &-container {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -47,7 +47,7 @@
       margin-top: 1rem;
       min-width: 210px;
       border-radius: 5px;
-      box-shadow: 0 0 5 rgba(0,0,0,0.2);
+      box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
 
       p {
         margin: 1rem 0;
@@ -66,21 +66,22 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-left: auto;
+  }
 
-    &__menu-container button,
-    button {
-      padding: 0.5rem 1rem;
-      background: #FF4820;
-      color: #FFF;
-      font-family: var(--font-family);
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 25px;
-      border-radius: 5px;
-      outline: none;
-      border: none;
-      cursor: pointer;
-    }
+  &__sign button,
+  &__menu-container--links-sign button {
+    padding: 0.5rem 1rem;
+    background: #FF4820;
+    color: #FFF;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
   }
 
   &__links--container p,
@@ -94,5 +95,41 @@
     text-transform: capitalize;
     margin: 0 1rem;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar {
+    &__links--container {
+      display: none;
+    }
+
+    &__menu {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 2rem;
+
+    &__sign {
+      display: none;
+    }
+
+    &__menu-container {
+      top: 20px;
+    }
+
+    &__menu-container--links-sign {
+      display: block;
+    }
   }
 }
