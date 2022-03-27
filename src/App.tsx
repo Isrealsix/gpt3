@@ -7,6 +7,7 @@ import {
   Footer,
 } from "./containers";
 import { Brand, Cta, Navbar } from "./components";
+import './App.scss';
 
 const App = () => {
   return (
