@@ -1,5 +1,5 @@
-import './Feature.scss';
-import { IFeature } from '../../model/model';
+import "./Feature.scss";
+import { IFeature } from "../../model/model";
 
 const Feature: React.FC<IFeature> = ({ title, text }) => {
   return (
@@ -7,12 +7,12 @@ const Feature: React.FC<IFeature> = ({ title, text }) => {
       <div className="whatgpt3__container-feature--title">
         <div />
         <h1>{title}</h1>
-        <div className="whatgpt3__container-feature--text">
-          {text}
-        </div>
+      </div>
+      <div className="whatgpt3__container-feature--text">
+          <p>{text}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;

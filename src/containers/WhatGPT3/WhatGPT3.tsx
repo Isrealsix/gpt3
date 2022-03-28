@@ -15,9 +15,9 @@ const WhatGPT3 = () => {
         <p>Explore The Library</p>
       </div>
       <div className="whatgpt3__container">
-        <Feature { ...allFeatures[1] }/>
-        <Feature {...allFeatures[2] } />
-        <Feature {...allFeatures[3] } />
+        <Feature {...allFeatures[1]} />
+        <Feature {...allFeatures[2]} />
+        <Feature {...allFeatures[3]} />
       </div>
     </div>
   );
