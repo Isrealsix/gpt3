@@ -49,14 +49,14 @@
     flex-wrap: wrap;
     margin-top: 2rem;
 
-    &--feature {
+    &-feature {
       flex: 1;
       margin: 1rem;
       min-width: 210px;
       display: unset;
       flex-direction: column;
 
-      &-text {
+      &--text {
         margin-top: 0.5rem;
       }
     }
@@ -80,13 +80,14 @@
 @media only screen and (max-width: 650px) {
   .whatgpt3 {
 
-    &__feature,
     &__container {
-      flex-direction: column;
-    }
+      &-feature {
+        flex-direction: column;
 
-    &__feature, &__container-feature-text {
-      margin-top: 0.5rem;
+        &--text {
+          margin-top: 0.5rem;
+        }
+      }
     }
 
     &__heading h1 {
@@ -99,8 +100,7 @@
 
 @media only screen and (max-width: 350px) {
   .whatgpt3 {
-    &__container,
-    &__feature {
+    &__container-feature {
       margin: 1rem 0;
       min-width: 100%;
     }
