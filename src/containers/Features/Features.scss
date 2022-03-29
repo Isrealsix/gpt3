@@ -4,6 +4,14 @@
   justify-content: space-between;
   flex-direction: row;
 
+  &__container {
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .whatgpt3__container {
     flex-direction: column;
 
@@ -37,6 +45,25 @@
       line-height: 30px;
       color: var(--color-subtext);
       margin-top: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .features {
+    flex-direction: column;
+
+    &__heading {
+      margin: 0 0 2rem 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .features {
+    &__heading h1 {
+      font-size: 28px;
+      line-height: 38px;
     }
   }
 }

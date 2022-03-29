@@ -12,7 +12,7 @@ const Features = () => {
         </h1>
         <p>Request Early Access to Get Started</p>
       </div>
-      <div className="whatgpt3__container">
+      <div className="features__container">
         <Feature {...allFeatures[4]} />
         <Feature {...allFeatures[5]} />
         <Feature {...allFeatures[6]} />

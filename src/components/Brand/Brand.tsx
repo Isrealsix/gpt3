@@ -3,7 +3,7 @@ import "./Brand.scss";
 
 const Brand = () => {
   return (
-    <div className="brand section__padding">
+    <div className="brand section-padding">
       <div>
         <img src={google} alt="google" />
       </div>
