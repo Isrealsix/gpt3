@@ -1,0 +1,42 @@
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  .whatgpt3__container {
+    flex-direction: column;
+
+    &-feature {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__heading {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin: 2rem 5rem 0 0;
+    color: #fff;
+
+    h1 {
+      font-family: var(--font-family);
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 45px;
+    }
+
+    p {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      color: var(--color-subtext);
+      margin-top: 2rem;
+    }
+  }
+}

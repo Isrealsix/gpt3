@@ -7,7 +7,7 @@ const Header = () => {
     <div className="header section-padding" id="home">
       <div className="header__content">
         <h1 className="gradient-text">
-          Let's Build Something amazing with GPT-3 OpenAI
+          Let 'Изи' Build Something amazing with GPT-3 OpenAI
         </h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
